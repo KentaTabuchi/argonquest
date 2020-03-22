@@ -1,0 +1,13 @@
+@mixin text-base($fontsize){
+  color:white;
+  font-weight: bold;
+  font-size:$fontsize;
+}
+
+.text-command{
+  @include text-base(20px);
+}
+
+.text-wallet{
+  @include text-base(20px);
+}

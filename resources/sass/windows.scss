@@ -1,0 +1,30 @@
+.win-backscreen{
+  background-color: black;
+  width:800px ;
+  height:600px;
+}
+
+@mixin win-base($width,$height,$top,$left){
+  width:$width + px;
+  height:$height + px;
+  top:$top + px;
+  left:$left + px;
+  background-color: black;
+  position: absolute;
+  border:solid white 2px;
+  border-radius: 10px;
+}
+.win-message{
+  @include win-base(600,200,380,190);
+}
+
+.win-command{
+  @include win-base(160,200 ,380 ,15 )
+}
+
+.win-wallet{
+  @include win-base(250,30 ,20 ,520 );
+  padding-top:10px;
+  padding-left: 20px;
+}
+

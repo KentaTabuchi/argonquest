@@ -1,0 +1,40 @@
+.win-backscreen {
+  background-color: black;
+  width: 800px;
+  height: 600px;
+}
+
+.win-message {
+  width: 600px;
+  height: 200px;
+  top: 380px;
+  left: 190px;
+  background-color: black;
+  position: absolute;
+  border: solid white 2px;
+  border-radius: 10px;
+}
+
+.win-command {
+  width: 160px;
+  height: 200px;
+  top: 380px;
+  left: 15px;
+  background-color: black;
+  position: absolute;
+  border: solid white 2px;
+  border-radius: 10px;
+}
+
+.win-wallet {
+  width: 250px;
+  height: 30px;
+  top: 20px;
+  left: 520px;
+  background-color: black;
+  position: absolute;
+  border: solid white 2px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
