@@ -9,21 +9,23 @@
   height:$height + px;
   top:$top + px;
   left:$left + px;
+  padding:20px;
   background-color: black;
   position: absolute;
   border:solid white 2px;
   border-radius: 10px;
+  
 }
 .win-message{
-  @include win-base(600,200,380,190);
+  @include win-base(560,180,380,190);
 }
 
 .win-command{
-  @include win-base(160,200 ,380 ,15 )
+  @include win-base(120,180 ,380 ,15 )
 }
 
 .win-wallet{
-  @include win-base(250,30 ,20 ,520 );
+  @include win-base(220,30 ,20 ,520 );
   padding-top:10px;
   padding-left: 20px;
 }

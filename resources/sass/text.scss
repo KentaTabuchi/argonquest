@@ -6,6 +6,16 @@
 
 .text-command{
   @include text-base(20px);
+  &:hover{
+    color:black;
+    background-color: white;
+    &::before{
+      content: '▶︎';
+      color:white;
+      position: absolute;
+      left:1px;
+    }
+  }
 }
 
 .text-wallet{

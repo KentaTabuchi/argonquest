@@ -5,10 +5,11 @@
 }
 
 .win-message {
-  width: 600px;
-  height: 200px;
+  width: 560px;
+  height: 180px;
   top: 380px;
   left: 190px;
+  padding: 20px;
   background-color: black;
   position: absolute;
   border: solid white 2px;
@@ -16,10 +17,11 @@
 }
 
 .win-command {
-  width: 160px;
-  height: 200px;
+  width: 120px;
+  height: 180px;
   top: 380px;
   left: 15px;
+  padding: 20px;
   background-color: black;
   position: absolute;
   border: solid white 2px;
@@ -27,10 +29,11 @@
 }
 
 .win-wallet {
-  width: 250px;
+  width: 220px;
   height: 30px;
   top: 20px;
   left: 520px;
+  padding: 20px;
   background-color: black;
   position: absolute;
   border: solid white 2px;

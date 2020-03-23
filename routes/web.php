@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('/','MainController@get_init');
+Route::get('onCommandClick','MainController@onCommandClick');

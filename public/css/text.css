@@ -1,7 +1,20 @@
+@charset "UTF-8";
 .text-command {
   color: white;
   font-weight: bold;
   font-size: 20px;
+}
+
+.text-command:hover {
+  color: black;
+  background-color: white;
+}
+
+.text-command:hover::before {
+  content: '▶︎';
+  color: white;
+  position: absolute;
+  left: 1px;
 }
 
 .text-wallet {
