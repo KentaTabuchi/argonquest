@@ -30,6 +30,7 @@
     </form>
     </div>
     <div class="win-message">
+      <p class="text-message">{!! $message !!}</p>
     </div>
   </div>
 </body>

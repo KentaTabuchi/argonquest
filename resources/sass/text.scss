@@ -21,3 +21,7 @@
 .text-wallet{
   @include text-base(20px);
 }
+
+.text-message{
+  @include text-base(18px);
+}
