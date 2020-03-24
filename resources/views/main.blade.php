@@ -12,11 +12,12 @@
 <body>
   <div class="win-backscreen">
     <div class="win-wallet">
-      <p class="text-wallet">¥</p>
+      <p class="text-wallet">¥10000000</p>
     </div>
     <div class="win-enemyimage">
       <img src="image/fantasy_maou_devil.png">
     </div>
+    @if($windowflg['win_command'])
     <div class="win-command">
       <form name="command_form" action="onCommandClick">
         @csrf
@@ -29,9 +30,21 @@
       <input type="hidden" name="hdnCommandValue" id="commandValue" value="">
     </form>
     </div>
-    <div class="win-message">
-      <p class="text-message">{!! $message !!}</p>
+    @endif
+    
+    @if(!$windowflg['win_message'])
+    <form name="message_form" action="onMessageClick">
+    <div class="win-message" onclick="message_click();">
+          @csrf
+        <p class="text-message">{!! $message !!}</p>
     </div>
+    </form>
+    @else
+    <div class="win-message">
+        <p class="text-message">{!! $message !!}</p>
+    </div>
+    @endif
+    
   </div>
 </body>
 </html>

@@ -23,7 +23,19 @@ class MainController extends Controller
     public function onCommandClick(Request $request){
         $logic = new BattleLogic(); 
         $command = $request->hdnCommandValue;
-        $message = $logic->playerTurn($command);
-        return view('main',compact('message'));
+        list($message,$price) = $logic->playerTurn($command);
+        $windowflg = ['win_command' => false ,'win_message' =>false];
+        return view('main',compact('message','windowflg'));
+    }
+    /**
+     * メッセージ送りボタンをクリック時に発動。
+     */
+    public function onMessageClick()
+    {
+        $logic = new BattleLogic(); 
+        list($message,$price) = $logic->EnemyTurn();
+        $windowflg = ['win_command' => true ,'win_message' =>true];
+        return view('main',compact('message','windowflg'));
+
     }
 }
