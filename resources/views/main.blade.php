@@ -36,7 +36,7 @@
     <form name="message_form" action="onMessageClick">
     <div class="win-message" onclick="message_click();">
           @csrf
-        <p class="text-message">{!! $message !!}</p>
+        <p class="text-message">{!! nl2br($message) !!}</p>
     </div>
     </form>
     @else

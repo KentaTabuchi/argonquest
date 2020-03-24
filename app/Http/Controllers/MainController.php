@@ -13,8 +13,7 @@ class MainController extends Controller
      */
     public function get_init()
     {
-        $message = "アルゴンが現れた。\nどうする？  ▼";
-        $message = nl2br($message);
+        $message = "魔王アルゴンが現れた。\nどうする？  ▼";
         return view('main',compact('message'));
     }
     /**

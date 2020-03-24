@@ -10,7 +10,7 @@
   top: 380px;
   left: 190px;
   padding: 20px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.75);
   position: absolute;
   border: solid white 2px;
   border-radius: 10px;
@@ -22,7 +22,7 @@
   top: 380px;
   left: 15px;
   padding: 20px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.75);
   position: absolute;
   border: solid white 2px;
   border-radius: 10px;
@@ -34,7 +34,7 @@
   top: 20px;
   left: 520px;
   padding: 20px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.75);
   position: absolute;
   border: solid white 2px;
   border-radius: 10px;
