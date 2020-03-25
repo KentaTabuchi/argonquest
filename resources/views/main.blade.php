@@ -12,7 +12,7 @@
 <body>
   <div class="win-backscreen">
     <div class="win-wallet">
-      <p class="text-wallet">¥10000000</p>
+      <p class="text-wallet">¥{{$wallet}}</p>
     </div>
     <div class="win-enemyimage">
       <img src="image/fantasy_maou_devil.png">
